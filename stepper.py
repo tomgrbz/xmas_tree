@@ -12,32 +12,7 @@ for k, v in enumerate(leds):
     map(lambda x: tree[tree_copy.index(x)].off(), leds[k])
     for i, j in enumerate(leds[k]):
         tree[tree_copy.index(j)].on()
-    # #num_turned_on += 1
-    # # tree[k].source_delay = 0.5
-    # # tree[k].source = random_values()
-    # #tree[k].on()
         print(leds[k][i])
-    # # tree[k].off()
         tree[tree_copy.index(j)].off()
-
-
-    
-    
+ 
 pause()
-
-
-
-# def turn_off_all():
-#     tree.off()
-# while True:
-#     for led in tree[:9]:
-#         led.source = random_values()
-#         sleep(0.2)
-        
-#     turn_off_all()
-#     sleep(1)
-#     for led in tree[10:20]:
-#         led.source = random_values()
-#         sleep(0.2)
-#     turn_off_all()
-
